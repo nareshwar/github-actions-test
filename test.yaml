@@ -1,0 +1,13 @@
+name: Naresh,
+age: 30,
+address: 
+  Line1: XXY
+  Line2: AAZ
+  Line3: LLY
+qualifications:
+  - Technical: BC
+  - key1:
+      key2: UUU
+      key3: JJJ
+  - Functional: NAV
+  
