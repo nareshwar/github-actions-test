@@ -13,7 +13,7 @@ jobs:
          run: |
           node -v
           npm -v 
-          
+
        - name: python Command
          run: |
            import platform
@@ -21,6 +21,7 @@ jobs:
          shell: python
   run-windows-commands:
     runs-on: windows-latest
+    needs: [run-shell-command]
     steps:
       - name: Directory Powershell
         run: Get-Location
