@@ -7,7 +7,7 @@ on:
   # push: 
   
   repository_dispatch:
-    types: [build]
+    types: [ build ]
 
   pull_request:
     types: [ closed, assigned, opened, reopened ]
