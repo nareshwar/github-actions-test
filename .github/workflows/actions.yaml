@@ -13,7 +13,9 @@ on:
     types: [ build ]
 
   pull_request:
-    types: [ closed, assigned, opened, reopened ]
+    branches:
+      - master
+      - develop
 
 jobs:
   run-github-actions:
