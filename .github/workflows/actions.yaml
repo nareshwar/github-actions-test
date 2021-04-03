@@ -4,13 +4,24 @@ on:
   # schedule:
   #   - cron: "0/5 * * * *"
 
-  # push: 
-  
+  push:
+    branches:
+      - master
+      - develop 
+      - 'feature/*'
+      - '!feature/featC'
+    tags:
+      - v1.*
+
   repository_dispatch:
-    types: [build]
+    types: [ build ]
 
   pull_request:
-    types: [ closed, assigned, opened, reopened ]
+    branches:
+      - master
+      - develop
+      - 'feature/*'
+      - '!feature/featC'
 
 jobs:
   run-github-actions:
